@@ -2,12 +2,12 @@
 
 <h1>Create a new Pet</h1>
 
-<form action="/pets" method="POST">
+<form action="/pets/<%=@owner.id%>" method="POST">
   <label>Name:</label>
 
   <br></br>
 
-  <input type="text" name="pet[name]" id="pet_name">
+  <input type="text" name="pet[name]" id="pet_name" value="<%=@pet.name%>">
 
   <br></br>
 
